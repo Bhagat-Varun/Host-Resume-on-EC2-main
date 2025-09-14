@@ -5,44 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bhagat Varun — Resume</title>
   <style>
-    /* Reset */
-    * {box-sizing: border-box}
-    body {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin: 0; color: #1a1a1a}
-
-    /* Page container for A4-like print */
-    .page {width: 210mm; min-height: 297mm; padding: 28mm 20mm; margin: 10mm auto; background: white}
-
-    header {display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px}
-    .name {font-size: 28px; font-weight: 700; letter-spacing: 0.4px}
-    .title {font-size: 12px; color: #555}
-
-    .contact {text-align: right; font-size: 12px}
-    .contact a {color: inherit; text-decoration: none}
-
-    .section {margin-top: 14px}
-    .section h2 {font-size: 14px; margin: 0 0 8px 0; padding-bottom: 6px; border-bottom: 1px solid #e6e6e6}
-
-    p.summary {margin: 6px 0 0 0; line-height: 1.45}
-
-    .two-col {display: grid; grid-template-columns: 1fr 320px; gap: 18px}
-    .left {min-width: 0}
-    .right {background: #fafafa; padding: 12px; border-radius: 6px}
-
-    .project {margin-bottom: 10px}
-    .project .title {font-weight: 600}
-    .meta {font-size: 12px; color: #666}
-
-    ul.skills {list-style: none; padding: 0; margin: 6px 0}
-    ul.skills li {display: inline-block; margin: 4px 8px 4px 0; padding: 6px 8px; background: #f1f1f1; border-radius: 4px; font-size: 12px}
-
-    .edu-item {margin-bottom: 8px}
-    .small {font-size: 12px; color: #555}
-
-    /* Print-friendly adjustments */
-    @media print {
-      body, .page {margin: 0; box-shadow: none}
+    /* Global Reset */
+    * {box-sizing: border-box; margin: 0; padding: 0;}
+    body {
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      color: #2b2b2b;
+      background: yellow;
+      line-height: 1.5;
     }
 
+    /* Page container */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      padding: 28mm 22mm;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+    }
+    .name {
+      font-size: 30px;
+      font-weight: 700;
+      color: #004080;
+      letter-spacing: 0.5px;
+    }
+    .title {
+      font-size: 14px;
+      color: #333;
+      margin-top: 4px;
+    }
+
+    .contact {text-align: right; font-size: 13px;}
+    .contact a {color: #004080; text-decoration: none;}
+    .contact a:hover {text-decoration: underline;}
+
+    .section {margin-top: 20px;}
+    .section h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #004080;
+      border-bottom: 1px solid #d0d6e0;
+      padding-bottom: 4px;
+    }
+
+    p.summary {margin: 6px 0 0 0; font-size: 14px; color: #333;}
+
+    .two-col {display: grid; grid-template-columns: 1fr 280px; gap: 24px; margin-top: 16px;}
+    .left {min-width: 0;}
+    .right {background: #f0f6fc; padding: 14px; border: 1px solid #d0d6e0; border-radius: 8px;}
+
+    .project {margin-bottom: 16px;}
+    .project .title {font-weight: 600; color: #333; font-size: 14px;}
+    .project .small {font-size: 12px; color: #666; margin-bottom: 4px;}
+
+    ul.skills {list-style: none; padding: 0; margin: 6px 0;}
+    ul.skills li {
+      display: inline-block;
+      margin: 4px 6px 4px 0;
+      padding: 6px 10px;
+      background: #e1ecf7;
+      border: 1px solid #c0d4ef;
+      border-radius: 20px;
+      font-size: 12px;
+      color: #004080;
+      font-weight: 500;
+    }
+
+    .edu-item {margin-bottom: 12px;}
+    .edu-item div:first-child {font-weight: 600; font-size: 14px; color: #222;}
+    .small {font-size: 12px; color: #555;}
+
+    footer {
+      margin-top: 24px;
+      font-size: 12px;
+      color: #666;
+      border-top: 1px solid #d0d6e0;
+      padding-top: 10px;
+      text-align: center;
+    }
+
+    /* Print adjustments */
+    @media print {
+      body {background: white;}
+      .page {margin: 0; box-shadow: none; border-radius: 0;}
+    }
   </style>
 </head>
 <body>
@@ -87,24 +144,24 @@
           <h2>Education</h2>
 
           <div class="edu-item">
-            <div style="font-weight:600">Master of Science in Cloud and Application Development</div>
+            <div>Master of Science in Cloud and Application Development</div>
             <div class="small">Gujarat University, Ahmedabad — 2025–Present (Pursuing)</div>
           </div>
 
           <div class="edu-item">
-            <div style="font-weight:600">Bachelor of Science in Cloud and Application Development</div>
+            <div>Bachelor of Science in Cloud and Application Development</div>
             <div class="small">Gujarat University, Ahmedabad — 2022–2025</div>
             <div class="small">CGPA: 8.76 / 10</div>
           </div>
 
           <div class="edu-item">
-            <div style="font-weight:600">12th Grade (Commerce), GSEB</div>
+            <div>12th Grade (Commerce), GSEB</div>
             <div class="small">SMT. P.B.D. Joshi High School — 2022</div>
             <div class="small">Marks: 43.42 / 100</div>
           </div>
 
           <div class="edu-item">
-            <div style="font-weight:600">10th Grade, GSEB</div>
+            <div>10th Grade, GSEB</div>
             <div class="small">SMT. P.B.D. Joshi High School — 2020</div>
             <div class="small">Marks: 77.74 / 100</div>
           </div>
@@ -177,7 +234,7 @@
       </aside>
     </div>
 
-    <footer style="margin-top:18px; font-size:12px; color:#666">Technical electives: OS, DBMS, OOPS. Developer tools: Git, GitHub, VS Code, IntelliJ IDEA, PyCharm Community.</footer>
+    <footer>Technical electives: OS, DBMS, OOPS. Developer tools: Git, GitHub, VS Code, IntelliJ IDEA, PyCharm Community.</footer>
   </div>
 </body>
 </html>
